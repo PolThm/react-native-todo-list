@@ -1,4 +1,4 @@
-import {FC} from 'react';
+import { FC } from 'react';
 import {
   TouchableOpacity,
   Text,
@@ -25,14 +25,14 @@ const styles = StyleSheet.create({
     backgroundColor: '#3498db',
     borderRadius: 20,
     paddingVertical: 10,
-    paddingHorizontal: 20,
+    paddingHorizontal: 20
   },
   text: {
     color: 'white',
     textAlign: 'center',
     fontSize: 16,
-    fontWeight: 'bold',
-  },
+    fontWeight: 'bold'
+  }
 });
 
 export default MyButton;

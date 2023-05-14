@@ -1,5 +1,5 @@
-import {createNativeStackNavigator} from '@react-navigation/native-stack';
-import {NavigationContainer} from '@react-navigation/native';
+import { createNativeStackNavigator } from '@react-navigation/native-stack';
+import { NavigationContainer } from '@react-navigation/native';
 import HomePage from './src/pages/HomePage';
 import TodoListPage from './src/pages/TodoListPage';
 
@@ -12,12 +12,10 @@ export default function App() {
         <Stack.Screen
           name="Home"
           component={HomePage}
-          options={{title: 'Welcome'}}
+          options={{ title: 'Welcome' }}
         />
         <Stack.Screen name="Todo List" component={TodoListPage} />
       </Stack.Navigator>
     </NavigationContainer>
   );
 }
-
-

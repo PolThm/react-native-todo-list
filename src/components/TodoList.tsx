@@ -1,4 +1,4 @@
-import {FC, useState} from 'react';
+import { FC, useState } from 'react';
 import { View, Text, FlatList, TextInput, StyleSheet } from 'react-native';
 import MyButton from './MyButton';
 
@@ -26,38 +26,38 @@ const TodoList: FC = () => {
       <Text style={styles.todoTitle}>{item.title}</Text>
       <MyButton
         onPress={() => handleDeleteTodo(item.id)}
-        title='Delete'
+        title="Delete"
         buttonStyle={styles.deleteButton}
       />
     </View>
   );
 
   return (
-      <View style={styles.container}>
-        <FlatList
-          data={todos}
-          renderItem={renderItem}
-          keyExtractor={(item) => item.id.toString()}
-          ListHeaderComponent={
-            <>
-              <View style={styles.header}>
-                <TextInput
-                  style={styles.input}
-                  placeholder="Add a task"
-                  value={newTodo}
-                  onChangeText={setNewTodo}
-                />
-                <MyButton
-                  onPress={handleAddTodo}
-                  title='Add'
-                  buttonStyle={styles.addButton}
-                />
-              </View>
-              <View style={styles.divider} />
-            </>
-          }
-        />
-      </View>
+    <View style={styles.container}>
+      <FlatList
+        data={todos}
+        renderItem={renderItem}
+        keyExtractor={(item) => item.id.toString()}
+        ListHeaderComponent={
+          <>
+            <View style={styles.header}>
+              <TextInput
+                style={styles.input}
+                placeholder="Add a task"
+                value={newTodo}
+                onChangeText={setNewTodo}
+              />
+              <MyButton
+                onPress={handleAddTodo}
+                title="Add"
+                buttonStyle={styles.addButton}
+              />
+            </View>
+            <View style={styles.divider} />
+          </>
+        }
+      />
+    </View>
   );
 };
 
@@ -66,11 +66,11 @@ const styles = StyleSheet.create({
     flex: 1,
     width: '100%',
     paddingHorizontal: 20,
-    paddingVertical: 40,
+    paddingVertical: 40
   },
   header: {
     flexDirection: 'row',
-    marginBottom: 20,
+    marginBottom: 20
   },
   input: {
     flex: 1,
@@ -79,7 +79,7 @@ const styles = StyleSheet.create({
     borderRadius: 5,
     paddingHorizontal: 10,
     paddingVertical: 5,
-    marginRight: 10,
+    marginRight: 10
   },
   addButton: {
     backgroundColor: '#3498db',
@@ -88,15 +88,15 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: 80,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   todo: {
     flexDirection: 'row',
     alignItems: 'center',
-    marginBottom: 10,
+    marginBottom: 10
   },
   todoTitle: {
-    flex: 1,
+    flex: 1
   },
   deleteButton: {
     backgroundColor: 'red',
@@ -105,13 +105,13 @@ const styles = StyleSheet.create({
     paddingHorizontal: 10,
     width: 80,
     justifyContent: 'center',
-    alignItems: 'center',
+    alignItems: 'center'
   },
   divider: {
     height: 1,
     backgroundColor: '#ccc',
-    marginBottom: 20,
-  },
+    marginBottom: 20
+  }
 });
 
 export default TodoList;

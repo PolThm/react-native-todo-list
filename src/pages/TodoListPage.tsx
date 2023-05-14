@@ -1,11 +1,13 @@
-import {StyleSheet, Text, View} from 'react-native';
-import {FC} from 'react';
+import { StyleSheet, Text, View } from 'react-native';
+import { FC } from 'react';
 import TodoList from '../components/TodoList';
 
-const TodoListPage: FC = ({route}: any) => {
+const TodoListPage: FC = ({ route }: any) => {
   return (
     <View style={styles.container}>
-      <Text style={{fontSize: 18}}>This is {route.params.name}'s Todo List</Text>
+      <Text style={{ fontSize: 18 }}>
+        This is {route.params.name}'s Todo List
+      </Text>
       <TodoList />
     </View>
   );
@@ -17,7 +19,7 @@ const styles = StyleSheet.create({
     alignItems: 'center',
     justifyContent: 'center',
     gap: 20,
-    paddingTop: 40,
+    paddingTop: 40
   }
 });
 
