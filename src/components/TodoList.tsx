@@ -82,13 +82,7 @@ const styles = StyleSheet.create({
     marginRight: 10
   },
   addButton: {
-    backgroundColor: '#3498db',
-    borderRadius: 5,
-    paddingVertical: 5,
-    paddingHorizontal: 10,
     width: 80,
-    justifyContent: 'center',
-    alignItems: 'center'
   },
   todo: {
     flexDirection: 'row',
@@ -100,12 +94,9 @@ const styles = StyleSheet.create({
   },
   deleteButton: {
     backgroundColor: 'red',
-    borderRadius: 5,
     paddingVertical: 5,
     paddingHorizontal: 10,
     width: 80,
-    justifyContent: 'center',
-    alignItems: 'center'
   },
   divider: {
     height: 1,

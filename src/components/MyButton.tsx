@@ -23,7 +23,7 @@ const MyButton: FC<Props> = ({ onPress, title, buttonStyle, textStyle }) => (
 const styles = StyleSheet.create({
   button: {
     backgroundColor: '#3498db',
-    borderRadius: 20,
+    borderRadius: 5,
     paddingVertical: 10,
     paddingHorizontal: 20
   },
